@@ -4,7 +4,7 @@ import * as mongoose from "mongoose";
 import _ from "lodash"; //to captalise first letter of route parameter
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // mongoose
 //   .connect("mongodb://127.0.0.1:27017/todoDB")
